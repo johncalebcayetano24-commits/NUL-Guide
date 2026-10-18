@@ -1,0 +1,72 @@
+.home-grid { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 28px; }
+.home-main, .home-aside { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.home-hero { color: white; background: var(--navy); border-radius: 20px; padding: 22px 36px; position: relative; overflow: hidden; min-height: 319px; }
+.home-hero > :not(.home-campus-sketch) { position: relative; z-index: 1; }
+.home-campus-sketch { position: absolute; width: 340px; height: 155px; top: 18px; left: 388px; opacity: .5; mix-blend-mode: multiply; overflow: hidden; border-radius: 20px; }
+.home-campus-sketch img { position: absolute; width: 131%; height: 131%; max-width: none; top: -31.03%; left: -.04%; }
+.home-greeting { color: #dce0f0; font-size: 15px; font-weight: 600; margin-bottom: 6px; line-height: 18px; }
+.home-hero h1 { font-size: 34px; line-height: 41px; font-weight: 800; letter-spacing: -.68px; white-space: nowrap; }
+.home-hero h1 span { color: var(--gold); }
+.home-hero-description { color: #dce0f0; font-size: 16px; line-height: 24px; max-width: 560px; margin-top: 6px; }
+.home-match-form { display: flex; align-items: center; gap: 10px; background: white; border-radius: 14px; padding: 6px; margin-top: 20px; min-height: 56px; box-shadow: 0 10px 20px rgb(12 17 38 / 15%); }
+.home-match-form > .icon { margin-left: 12px; }
+.home-match-form input:not([type=checkbox]) { flex: 1; min-width: 30px; padding: 9px 0; border: 0; background: transparent; font-size: 16px; border-radius: 0; }
+.home-match-form .btn { flex-shrink: 0; min-height: 44px; font-size: 15px; }
+.home-examples { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 8px; margin-top: 12px; }
+.home-examples > span { font-size: 13px; color: #c9cfe6; }
+.home-examples > button { border: 1px solid rgb(255 255 255 / 30%); background: rgb(255 255 255 / 12%); border-radius: 999px; padding: 5px 12px; color: white; font-size: 12px; line-height: 16px; }
+.home-examples > button:hover { background: rgb(255 255 255 / 22%); }
+.home-match-error { font-size: 12px; color: #fff4cd; margin-top: 6px; }
+.home-quick-section > h2 { margin-bottom: 10px; }
+.home-shortcuts { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px 14px; }
+.home-shortcut { padding: 14px 16px; color: var(--text); min-height: 114px; border-radius: 16px; }
+.home-shortcut:hover { text-decoration: none; border-color: #b6bfdc; }
+.home-shortcut-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.home-shortcut-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; justify-content: center; align-items: center; }
+.home-shortcut-icon.purple { background: #efeafb; }.home-shortcut-icon.mint { background: #e3f3ef; }.home-shortcut-icon.lavender { background: #eef0f8; }.home-shortcut-icon.peach { background: #fff0e5; }.home-shortcut-icon.green { background: #e5f4ea; }.home-shortcut-icon.sand { background: #f3ece4; }
+.home-shortcut h3 { font-size: 15px; line-height: 18px; font-weight: 700; }
+.home-shortcut p { font-size: 12.5px; color: var(--muted); line-height: 17px; margin-top: 3px; }
+.home-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.home-section-heading > a { font-size: 15px; font-weight: 600; }
+.home-concerns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+.home-concern { color: var(--text); padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.home-concern:hover { text-decoration: none; border-color: #b6bfdc; }
+.home-concern header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.home-concern code { font-size: 12px; font-weight: 600; white-space: nowrap; }
+.home-concern .badge { font-size: 11px; padding: 5px 8px; }
+.home-concern-category { color: var(--muted); font-size: 12px; line-height: 16px; }
+.home-concern h3 { font-size: 14px; font-weight: 600; line-height: 18px; min-height: 36px; }
+.home-progress { display: flex; justify-content: space-between; padding: 0 4px; }
+.home-progress > div { display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative; width: 33.333%; color: #667389; }
+.home-progress > div:not(:last-child)::after { position: absolute; content: ''; height: 3px; background: #e7eaf1; top: 7px; left: calc(50% + 8px); width: calc(100% - 16px); }
+.home-progress > div.reached:not(.current)::after { background: var(--navy); }
+.home-progress-dot { display: block; width: 18px; height: 18px; background: white; border-radius: 50%; border: 3px solid #e7eaf1; }
+.home-progress > .reached .home-progress-dot { border-color: var(--navy); background: var(--navy); }
+.home-progress > .current .home-progress-dot { background: var(--gold); }
+.home-progress small { font-size: 11px; white-space: nowrap; }
+.home-concern footer { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 11px; color: var(--muted); }
+.home-aside { gap: 20px; }
+.home-aside .card { padding: 20px; }
+.home-aside h2 { font-size: 16px; font-weight: 700; }
+.home-notification { display: block; border-bottom: 1px solid var(--border); padding: 12px 0; color: var(--text); }
+.home-notification:first-of-type { padding-top: 4px; }
+.home-notification:last-child { border-bottom: 0; padding-bottom: 0; }
+.home-notification:hover { text-decoration: none; }
+.home-notification h3 { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; line-height: 18px; }
+.home-notification i { display: inline-block; width: 8px; height: 8px; background: #e2b200; border-radius: 50%; }
+.home-notification p { color: #4a5466; font-size: 12.5px; margin-top: 4px; line-height: 17px; }
+.home-notification small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+.home-hours header { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+.home-hours header > span { color: var(--muted); font-size: 11px; white-space: nowrap; }
+.home-hours > a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.home-hours > a:last-child { border-bottom: 0; padding-bottom: 0; }
+.home-hours strong { color: #1e7a43; font-weight: 500; white-space: nowrap; }
+.home-hours .hours-soon { color: var(--muted); }
+.home-announcement { display: flex; gap: 14px; align-items: center; padding: 16px 20px; background: #eef0f8; border-radius: 12px; }
+.home-announcement > span { flex: 1; }
+.home-announcement strong { display: block; font-size: 14px; font-weight: 600; }
+.home-announcement small { display: block; color: var(--muted); font-size: 12.5px; line-height: 16px; margin-top: 3px; }
+.home-guest-concerns { display: flex; gap: 20px; justify-content: space-between; align-items: center; color: var(--muted); }
+@media (min-width: 901px) and (max-width: 1330px) { .home-grid { grid-template-columns: minmax(0,1fr) 270px; gap: 20px; } .home-hero { padding-inline: 24px; }.home-hero h1 { font-size: 27px; white-space: normal; }.home-shortcuts { grid-template-columns: repeat(2,minmax(0,1fr)); }.home-match-form { flex-wrap: wrap; }.home-match-form .btn { width: 100%; }.home-concerns { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .home-grid { grid-template-columns: 1fr; }.home-aside { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; }.home-announcement { grid-column: 1 / -1; }.home-hero { min-height: 319px; } }
+@media (max-width: 600px) { .home-hero { padding: 24px 20px; }.home-hero h1 { font-size: 28px; line-height: 35px; white-space: normal; }.home-hero-description { font-size: 14px; line-height: 22px; }.home-match-form { flex-wrap: wrap; }.home-match-form input:not([type=checkbox]) { font-size: 14px; }.home-match-form .btn { width: 100%; }.home-campus-sketch { left: 100px; }.home-examples > button { text-align: left; font-size: 11px; padding: 4px 8px; }.home-shortcuts { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }.home-shortcut { padding: 12px; }.home-shortcut h3 { font-size: 13px; }.home-shortcut p { font-size: 11px; }.home-concerns,.home-aside { grid-template-columns: 1fr; }.home-guest-concerns { flex-direction: column; align-items: flex-start; } }
