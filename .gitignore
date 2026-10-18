@@ -3,6 +3,17 @@ dist/
 *.zip
 submission/
 qa/screenshots/
+qa/**/*.png
+qa/**/*.json
+design-reference/
+.vscode/
+.tools/
+.local/
+*.log
+*.tmp
+*.pem
+*.key
+.npm-cache/
 playwright-report/
 test-results/
 .env*

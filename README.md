@@ -1,5 +1,9 @@
 # NUL Guide
 
+GitHub repository: [johncalebcayetano24-commits/NUL-Guide](https://github.com/johncalebcayetano24-commits/NUL-Guide).
+
+GitHub Pages entry point: [NUL Guide](https://johncalebcayetano24-commits.github.io/NUL-Guide/). Deployment configuration, refresh-safe links, and verification instructions are in [the GitHub Pages guide](docs/GITHUB_PAGES.md).
+
 **NU Student Service Finder & Assistance Platform** is a responsive front-end assessment project based on the group's Figma prototype. Students can find university offices, submit concerns, and follow responses. Staff can manage those same concerns and maintain the office directory.
 
 The application uses React, Vite, JavaScript/JSX, semantic HTML, modular CSS, React Router, and browser storage. Original exported Figma graphics are included in `public/assets`. Inter, Montserrat, and Fraunces fonts are installed through the locked npm dependencies and served locally.
