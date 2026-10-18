@@ -1,0 +1,33 @@
+{
+  "name": "nul-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NUL Guide — NU Student Service Finder & Assistance Platform. Local front-end assessment demonstration.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "node qa/workflow.mjs",
+    "test:screens": "node qa/browser-smoke.mjs",
+    "test:edges": "node qa/edge-cases.mjs",
+    "assets": "node scripts/download-design-assets.mjs",
+    "submission": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package-submission.ps1"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "vite": "^7.1.10"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
